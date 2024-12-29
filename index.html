@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>AMAZON</title>
+    <style>
+        body {
+            font-family: 'EB Garamond';
+            font-size: 20px;
+            color: #392613;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            background-color: #392613;
+            padding: 10px 0;
+            align-items: center;
+        }
+
+        .logo {
+            width: 20%;
+            padding-left: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .navigation {
+            background-color: #f9f2ec;
+            display: flex;
+            justify-content: space-around; /* Ensures equal spacing between links */
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .navigation a {
+            font-size: 20px;
+            color: #392613;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .services {
+            width: 20%;
+            background-color: #f9f2ec;
+            display: flex; /* Enables flexbox */
+            flex-direction: column; /* Align items vertically */
+            justify-content: space-around; /* Equal spacing between links */
+            align-items: center; /* Center align items horizontally */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .services a {
+            color: #392613;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .right-container {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .right-container iframe {
+            width: 100%;
+            height: calc(100% - 20px); /* Subtract padding */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://media.wired.com/photos/5926aae5f3e2356fd800a0e8/master/pass/amazon-logo.jpg" alt="Logo">
+        </div>
+        <h1>Amazon - Your Online Marketplace</h1>
+    </div>
+
+    <div class="navigation">
+        <a href="home.html" target="content-frame">Home</a>
+        <a href="login.html" target="content-frame">Login</a>
+        <a href="registration.html" target="content-frame">Registration</a>
+        <a href="catalogue.html" target="content-frame">Catalogue</a>
+        <a href="cart.html" target="content-frame">Cart</a>
+        <a href="contact.html" target="content-frame">Contact Us</a>
+    </div>
+
+    <div class="main">
+        <div class="services">
+            <a href="service1.html" target="content-frame">Service 1</a>
+            <a href="service2.html" target="content-frame">Service 2</a>
+            <a href="service3.html" target="content-frame">Service 3</a>
+            <a href="service4.html" target="content-frame">Service 4</a>
+            <a href="service5.html" target="content-frame">Service 5</a>
+        </div>
+
+        <div class="right-container">
+            <iframe name="content-frame" src="home.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>

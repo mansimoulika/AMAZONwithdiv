@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: EB Garamond;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e6ccb3;
+            border: 0px solid black;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #392613;
+        }
+
+        .input-box {
+            width: 90%;
+            padding: 8px;
+            font-size: 14px;
+            border: 0px solid #392613;
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .button {
+            display: block;
+            width: 25%;
+            text-align: centre;
+            background-color: #392613;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <div class="input-box" id="username" contenteditable="true" placeholder="Enter your username"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <div class="input-box" id="email" contenteditable="true" placeholder="Enter your email"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <div class="input-box" id="password" contenteditable="true" placeholder="Enter your password"></div>
+        </div>
+        <div class="submit-container">
+            <div class="button" onclick="alert('You clicked register!')">Register</div>
+        </div>
+    </div>
+</body
