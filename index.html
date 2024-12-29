@@ -41,7 +41,7 @@
         .navigation {
             background-color: #f9f2ec;
             display: flex;
-            justify-content: space-around; /* Ensures equal spacing between links */
+            justify-content: space-around;
             align-items: center;
             padding: 10px 0;
         }
@@ -61,10 +61,10 @@
         .services {
             width: 20%;
             background-color: #f9f2ec;
-            display: flex; /* Enables flexbox */
-            flex-direction: column; /* Align items vertically */
-            justify-content: space-around; /* Equal spacing between links */
-            align-items: center; /* Center align items horizontally */
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            align-items: center; 
             padding: 10px;
             box-sizing: border-box;
         }
@@ -84,7 +84,7 @@
 
         .right-container iframe {
             width: 100%;
-            height: calc(100% - 20px); /* Subtract padding */
+            height: calc(100% - 20px); 
             border: none;
         }
     </style>
@@ -116,7 +116,8 @@
         </div>
 
         <div class="right-container">
-            <iframe name="content-frame" src="home.html"></iframe>
+            <!-- The iframe is initially empty and content will load when clicked -->
+            <iframe name="content-frame"></iframe>
         </div>
     </div>
 </body>
